@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>图片库 · 空军主力战机</title>
+    <meta name="description" content="战机高清图片库，点击可放大查看。" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- 鼠标跟踪效果 -->
+    <div class="cursor-follower"></div>
+
+    <!-- 导航栏 -->
+    <nav class="main-nav">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="nav-logo">
+                    <span class="logo-icon">✈️</span>
+                    <span class="logo-text">空军主力战机</span>
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="gallery.html" class="active">图片库</a></li>
+                    <li><a href="details.html">战机详情</a></li>
+                    <li><a href="about.html">关于</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="container">
+            <div class="page-title">
+                <h1>战机图片库</h1>
+                <p>点击图片可放大查看，使用←→键或点击按钮切换图片</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="gallery-grid">
+            <div class="gallery-item" onclick="openLightbox(0)" data-title="F-22 猛禽 隐身战斗机" data-desc="美国第五代隐身战斗机">
+                <img src="https://via.placeholder.com/800x600/1a2332/4ea1ff?text=F-22+Raptor" alt="F-22 猛禽">
+                <div class="gallery-overlay">
+                    <h3>F-22 猛禽</h3>
+                    <p>第五代隐身战斗机</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" onclick="openLightbox(1)" data-title="F-35 闪电 II" data-desc="美国联合攻击战斗机">
+                <img src="https://via.placeholder.com/800x600/1a2332/4ea1ff?text=F-35+Lightning" alt="F-35 闪电 II">
+                <div class="gallery-overlay">
+                    <h3>F-35 闪电 II</h3>
+                    <p>联合攻击战斗机</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" onclick="openLightbox(2)" data-title="歼-20 威龙" data-desc="中国第五代隐身战斗机">
+                <img src="https://via.placeholder.com/800x600/1a2332/4ea1ff?text=J-20+威龙" alt="歼-20 威龙">
+                <div class="gallery-overlay">
+                    <h3>歼-20 威龙</h3>
+                    <p>中国第五代隐身战斗机</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" onclick="openLightbox(3)" data-title="苏-57" data-desc="俄罗斯第五代战斗机">
+                <img src="https://via.placeholder.com/800x600/1a2332/4ea1ff?text=Su-57" alt="苏-57">
+                <div class="gallery-overlay">
+                    <h3>苏-57</h3>
+                    <p>俄罗斯第五代战斗机</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" onclick="openLightbox(4)" data-title="F-16 战隼" data-desc="多用途战斗机">
+                <img src="https://via.placeholder.com/800x600/1a2332/4ea1ff?text=F-16+Falcon" alt="F-16 战隼">
+                <div class="gallery-overlay">
+                    <h3>F-16 战隼</h3>
+                    <p>多用途战斗机</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" onclick="openLightbox(5)" data-title="阵风战斗机" data-desc="法国多用途战斗机">
+                <img src="https://via.placeholder.com/800x600/1a2332/4ea1ff?text=Rafale" alt="阵风战斗机">
+                <div class="gallery-overlay">
+                    <h3>阵风战斗机</h3>
+                    <p>法国多用途战斗机</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" onclick="openLightbox(6)" data-title="歼-10 猛龙" data-desc="中国多用途战斗机">
+                <img src="https://via.placeholder.com/800x600/1a2332/4ea1ff?text=J-10+猛龙" alt="歼-10 猛龙">
+                <div class="gallery-overlay">
+                    <h3>歼-10 猛龙</h3>
+                    <p>中国多用途战斗机</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" onclick="openLightbox(7)" data-title="台风战斗机" data-desc="欧洲多国联合研制">
+                <img src="https://via.placeholder.com/800x600/1a2332/4ea1ff?text=Eurofighter" alt="台风战斗机">
+                <div class="gallery-overlay">
+                    <h3>台风战斗机</h3>
+                    <p>欧洲多国联合研制</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" onclick="openLightbox(8)" data-title="歼-15 飞鲨" data-desc="中国舰载战斗机">
+                <img src="https://via.placeholder.com/800x600/1a2332/4ea1ff?text=J-15+飞鲨" alt="歼-15 飞鲨">
+                <div class="gallery-overlay">
+                    <h3>歼-15 飞鲨</h3>
+                    <p>中国舰载战斗机</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" onclick="openLightbox(9)" data-title="苏-35" data-desc="俄罗斯第四代++战斗机">
+                <img src="https://via.placeholder.com/800x600/1a2332/4ea1ff?text=Su-35" alt="苏-35">
+                <div class="gallery-overlay">
+                    <h3>苏-35</h3>
+                    <p>俄罗斯第四代++战斗机</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" onclick="openLightbox(10)" data-title="F/A-18 大黄蜂" data-desc="美国舰载战斗机">
+                <img src="https://via.placeholder.com/800x600/1a2332/4ea1ff?text=F-18+Hornet" alt="F/A-18 大黄蜂">
+                <div class="gallery-overlay">
+                    <h3>F/A-18 大黄蜂</h3>
+                    <p>美国舰载战斗机</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" onclick="openLightbox(11)" data-title="SR-71 黑鸟" data-desc="高空高速侦察机">
+                <img src="https://via.placeholder.com/800x600/1a2332/4ea1ff?text=SR-71+Blackbird" alt="SR-71 黑鸟">
+                <div class="gallery-overlay">
+                    <h3>SR-71 黑鸟</h3>
+                    <p>高空高速侦察机</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 图片灯箱 -->
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-content" id="lightboxImg">
+        <div class="lightbox-info">
+            <h2 id="lightboxTitle"></h2>
+            <p id="lightboxDesc"></p>
+        </div>
+        <button class="lightbox-prev" onclick="changeLightboxImage(-1); event.stopPropagation();">&#10094;</button>
+        <button class="lightbox-next" onclick="changeLightboxImage(1); event.stopPropagation();">&#10095;</button>
+        <div class="lightbox-counter" id="lightboxCounter"></div>
+    </div>
+
+    <footer>
+        <div class="container">
+            © <span id="y"></span> 空军主力战机 · 纯静态示例。仅作界面演示，请遵守来源网站的版权与 robots 协议。
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

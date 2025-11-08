@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>战机详情 · 空军主力战机</title>
+    <meta name="description" content="查看战机的详细信息和技术参数。" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- 鼠标跟踪效果 -->
+    <div class="cursor-follower"></div>
+
+    <!-- 导航栏 -->
+    <nav class="main-nav">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="nav-logo">
+                    <span class="logo-icon">✈️</span>
+                    <span class="logo-text">空军主力战机</span>
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="gallery.html">图片库</a></li>
+                    <li><a href="details.html" class="active">战机详情</a></li>
+                    <li><a href="about.html">关于</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="container">
+            <div class="page-title">
+                <h1 id="aircraftTitle">F-22 猛禽 隐身战斗机</h1>
+                <p id="aircraftSubtitle">美国第五代隐身战斗机</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="details-layout">
+            <div class="details-main">
+                <div class="details-image">
+                    <img id="mainImage" src="https://via.placeholder.com/1000x600/1a2332/4ea1ff?text=F-22+Raptor" alt="F-22 猛禽">
+                </div>
+
+                <div class="details-content">
+                    <h2>简介</h2>
+                    <p id="description">
+                        F-22"猛禽"（F-22 Raptor）是美国洛克希德·马丁公司和波音公司联合研制的单座双发第五代隐身战斗机。
+                        F-22是世界上第一种服役的第五代战斗机，配备了先进的航空电子系统、武器和隐身技术，
+                        具有卓越的空中优势作战能力，可执行空对空和空对地作战任务。
+                    </p>
+
+                    <h2>性能参数</h2>
+                    <div class="specs-grid" id="specs">
+                        <div class="spec-item">
+                            <span class="spec-label">最大速度</span>
+                            <span class="spec-value">Mach 2.25 (约2,410 km/h)</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">作战半径</span>
+                            <span class="spec-value">约 759 km</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">最大航程</span>
+                            <span class="spec-value">约 2,960 km</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">实用升限</span>
+                            <span class="spec-value">19,812 m</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">发动机</span>
+                            <span class="spec-value">2× 普惠 F119-PW-100</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">最大起飞重量</span>
+                            <span class="spec-value">38,000 kg</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">机长</span>
+                            <span class="spec-value">18.92 m</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">翼展</span>
+                            <span class="spec-value">13.56 m</span>
+                        </div>
+                    </div>
+
+                    <h2>主要特点</h2>
+                    <ul class="features-list" id="features">
+                        <li>先进的隐身设计，雷达反射截面极小</li>
+                        <li>超音速巡航能力，无需加力燃烧即可突破音速</li>
+                        <li>超视距作战能力，配备AIM-120先进中程空对空导弹</li>
+                        <li>矢量推力技术，具有卓越的机动性能</li>
+                        <li>先进的航空电子系统和传感器融合技术</li>
+                        <li>优秀的态势感知能力</li>
+                    </ul>
+
+                    <h2>发展历史</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-year">1981年</div>
+                            <div class="timeline-content">美国空军启动先进战术战斗机（ATF）计划</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">1991年</div>
+                            <div class="timeline-content">YF-22原型机在竞标中胜出</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">1997年</div>
+                            <div class="timeline-content">首架F-22首飞成功</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">2005年</div>
+                            <div class="timeline-content">F-22正式服役</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">2011年</div>
+                            <div class="timeline-content">停止生产，共生产195架</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <aside class="details-sidebar">
+                <div class="sidebar-card">
+                    <h3>基本信息</h3>
+                    <dl class="info-list">
+                        <dt>型号</dt>
+                        <dd id="model">F-22 Raptor</dd>
+                        <dt>国家</dt>
+                        <dd id="country">美国</dd>
+                        <dt>制造商</dt>
+                        <dd id="manufacturer">洛克希德·马丁 / 波音</dd>
+                        <dt>类型</dt>
+                        <dd id="type">隐身战斗机</dd>
+                        <dt>首飞</dt>
+                        <dd id="firstFlight">1997年9月7日</dd>
+                        <dt>服役</dt>
+                        <dd id="inService">2005年12月</dd>
+                        <dt>生产数量</dt>
+                        <dd id="produced">195架</dd>
+                    </dl>
+                </div>
+
+                <div class="sidebar-card">
+                    <h3>相关战机</h3>
+                    <div class="related-aircraft">
+                        <a href="details.html?id=f35" class="related-item">
+                            <img src="https://via.placeholder.com/100x75/1a2332/4ea1ff?text=F-35" alt="F-35">
+                            <span>F-35 闪电 II</span>
+                        </a>
+                        <a href="details.html?id=j20" class="related-item">
+                            <img src="https://via.placeholder.com/100x75/1a2332/4ea1ff?text=J-20" alt="歼-20">
+                            <span>歼-20 威龙</span>
+                        </a>
+                        <a href="details.html?id=su57" class="related-item">
+                            <img src="https://via.placeholder.com/100x75/1a2332/4ea1ff?text=Su-57" alt="苏-57">
+                            <span>苏-57</span>
+                        </a>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            © <span id="y"></span> 空军主力战机 · 纯静态示例。仅作界面演示，请遵守来源网站的版权与 robots 协议。
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

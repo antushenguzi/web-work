@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>项目展示 - 我的作品集</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="cursor-follower"></div>
+    
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">我的项目</a>
+            <ul class="nav-menu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="projects.html" class="active">项目展示</a></li>
+                <li><a href="gallery.html">图片库</a></li>
+                <li><a href="about.html">关于我</a></li>
+                <li><a href="contact.html">联系方式</a></li>
+            </ul>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="搜索项目...">
+                <button onclick="searchProjects()">搜索</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>我的项目展示</h1>
+                <p>这里展示了我完成的各类项目作品</p>
+            </div>
+        </section>
+
+        <section class="projects-section">
+            <div class="container">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" onclick="filterProjects('all')">全部</button>
+                    <button class="filter-btn" onclick="filterProjects('web')">网站开发</button>
+                    <button class="filter-btn" onclick="filterProjects('design')">设计</button>
+                    <button class="filter-btn" onclick="filterProjects('data')">数据分析</button>
+                </div>
+
+                <div class="projects-grid" id="projectsGrid">
+                    <div class="project-card" data-category="web">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/500x350/4A90E2/ffffff?text=E-Commerce+Site" alt="电商网站">
+                        </div>
+                        <div class="project-info">
+                            <h3>电子商务网站</h3>
+                            <p class="project-tags">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                            </p>
+                            <p class="project-description">
+                                一个功能完整的电商平台，包含商品展示、购物车、用户认证等功能。
+                                使用现代化前端技术构建，提供流畅的用户体验。
+                            </p>
+                            <a href="#" class="project-link">查看项目 →</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="design">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/500x350/E74C3C/ffffff?text=UI+Design" alt="UI设计">
+                        </div>
+                        <div class="project-info">
+                            <h3>移动应用UI设计</h3>
+                            <p class="project-tags">
+                                <span>Figma</span>
+                                <span>UI/UX</span>
+                                <span>原型设计</span>
+                            </p>
+                            <p class="project-description">
+                                为健康管理应用设计的完整UI界面，包含用户研究、
+                                信息架构设计和高保真原型。注重用户体验和视觉美感。
+                            </p>
+                            <a href="#" class="project-link">查看项目 →</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="data">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/500x350/2ECC71/ffffff?text=Data+Visualization" alt="数据可视化">
+                        </div>
+                        <div class="project-info">
+                            <h3>数据可视化仪表板</h3>
+                            <p class="project-tags">
+                                <span>Python</span>
+                                <span>D3.js</span>
+                                <span>数据分析</span>
+                            </p>
+                            <p class="project-description">
+                                交互式数据分析平台，实时展示业务指标和趋势。
+                                使用Python进行数据处理，D3.js创建动态图表。
+                            </p>
+                            <a href="#" class="project-link">查看项目 →</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="web">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/500x350/9B59B6/ffffff?text=Blog+Platform" alt="博客平台">
+                        </div>
+                        <div class="project-info">
+                            <h3>个人博客平台</h3>
+                            <p class="project-tags">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>MongoDB</span>
+                            </p>
+                            <p class="project-description">
+                                功能完整的博客系统，支持文章发布、评论、标签分类等。
+                                前后端分离架构，RESTful API设计。
+                            </p>
+                            <a href="#" class="project-link">查看项目 →</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="design">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/500x350/F39C12/ffffff?text=Brand+Design" alt="品牌设计">
+                        </div>
+                        <div class="project-info">
+                            <h3>品牌视觉识别系统</h3>
+                            <p class="project-tags">
+                                <span>品牌设计</span>
+                                <span>Logo</span>
+                                <span>视觉系统</span>
+                            </p>
+                            <p class="project-description">
+                                为初创公司打造的完整品牌识别系统，包括Logo设计、
+                                色彩系统、字体规范和应用示例。
+                            </p>
+                            <a href="#" class="project-link">查看项目 →</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="web">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/500x350/1ABC9C/ffffff?text=Portfolio+Site" alt="作品集网站">
+                        </div>
+                        <div class="project-info">
+                            <h3>创意作品集网站</h3>
+                            <p class="project-tags">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>动画效果</span>
+                            </p>
+                            <p class="project-description">
+                                使用纯前端技术打造的个人作品集网站，
+                                包含多种动画效果和交互设计，展示创意作品。
+                            </p>
+                            <a href="#" class="project-link">查看项目 →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 我的项目展示. 保留所有权利.</p>
+            <div class="social-links">
+                <a href="#">GitHub</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

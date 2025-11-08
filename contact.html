@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系方式 - 与我联系</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="cursor-follower"></div>
+    
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">我的项目</a>
+            <ul class="nav-menu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="projects.html">项目展示</a></li>
+                <li><a href="gallery.html">图片库</a></li>
+                <li><a href="about.html">关于我</a></li>
+                <li><a href="contact.html" class="active">联系方式</a></li>
+            </ul>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="搜索...">
+                <button onclick="searchProjects()">搜索</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>联系我</h1>
+                <p>让我们一起创造精彩的项目</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h2>联系信息</h2>
+                        <p>欢迎通过以下方式与我联系。无论是项目合作、技术交流还是其他问题，我都很乐意与您沟通。</p>
+                        
+                        <div class="contact-items">
+                            <div class="contact-item">
+                                <div class="contact-icon">📧</div>
+                                <div class="contact-details">
+                                    <h3>邮箱</h3>
+                                    <p>your.email@example.com</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">📱</div>
+                                <div class="contact-details">
+                                    <h3>电话</h3>
+                                    <p>+86 138 0000 0000</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">📍</div>
+                                <div class="contact-details">
+                                    <h3>位置</h3>
+                                    <p>中国，北京</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">💼</div>
+                                <div class="contact-details">
+                                    <h3>工作状态</h3>
+                                    <p>开放合作机会</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-icons">
+                            <h3>社交媒体</h3>
+                            <div class="social-buttons">
+                                <a href="#" class="social-btn">
+                                    <span>GitHub</span>
+                                </a>
+                                <a href="#" class="social-btn">
+                                    <span>LinkedIn</span>
+                                </a>
+                                <a href="#" class="social-btn">
+                                    <span>Twitter</span>
+                                </a>
+                                <a href="#" class="social-btn">
+                                    <span>微信</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container">
+                        <h2>发送消息</h2>
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <label for="name">姓名 *</label>
+                                <input type="text" id="name" name="name" required placeholder="请输入您的姓名">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">邮箱 *</label>
+                                <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">主题 *</label>
+                                <input type="text" id="subject" name="subject" required placeholder="消息主题">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">消息 *</label>
+                                <textarea id="message" name="message" rows="6" required placeholder="请输入您的消息内容..."></textarea>
+                            </div>
+
+                            <button type="submit" class="submit-btn">发送消息</button>
+                        </form>
+                        <div class="form-message" id="formMessage"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <h2>准备开始您的项目了吗？</h2>
+                <p>让我们一起将您的想法变为现实</p>
+                <a href="projects.html" class="cta-button">查看我的作品</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 我的项目展示. 保留所有权利.</p>
+            <div class="social-links">
+                <a href="#">GitHub</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
